@@ -1,8 +1,8 @@
 public class User {
     private final String name;
-    private final int age;
+    private final double age;
 
-    public User(String name, int age) {
+    public User(String name, double age) {
         this.name = name;
         this.age = age;
     }
@@ -36,7 +36,7 @@ public class User {
         return name;
     }
 
-    public int getAge() {
+    public double getAge() {
         return age;
     }
 }
