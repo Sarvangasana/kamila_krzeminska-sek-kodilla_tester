@@ -47,7 +47,7 @@ public class Notebook {
                 System.out.println("This notebook is expensive.");
             }
         } else if (this.year <= 2014) {
-            System.out.println("This notebook is produced after 1999 but before 2014. It's quite old.");
+            System.out.println("This notebook is produced after 1999 but before 2015. It's quite old.");
             if (this.price < 600) {
                 System.out.println("This notebook is very cheap.");
             } else if (this.price <= 1000) {
