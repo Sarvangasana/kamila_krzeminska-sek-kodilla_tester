@@ -1,5 +1,7 @@
 package com.kodilla.collections.interfaces.homework;
 
+import java.util.Random;
+
 public interface Car {
     int getSpeed();
 
@@ -7,4 +9,5 @@ public interface Car {
 
     void decreaseSpeed();
 
+    void randomlyIncreasedSpeed();
 }
