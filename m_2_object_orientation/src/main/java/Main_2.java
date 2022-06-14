@@ -12,7 +12,7 @@ public class Main_2 {
         System.out.println(grades.averageOfGrades());
 
 
-        // Do zadania 2.5. cz. 1:
+       Do zadania 2.5. cz. 1: */
         User user1 = new User("Maciek", 20);
         User user2 = new User("Wiola", 25);
         User user3 = new User("Michał", 15);
@@ -31,7 +31,7 @@ public class Main_2 {
         System.out.println(randomNumbers.getMin());
         System.out.println(randomNumbers.getMax());
 
-        DO ZADANIA 2.7:
+        /*DO ZADANIA 2.7:
 
         Book book = Book.of("test", "test2");
         Book book2 = new Book();

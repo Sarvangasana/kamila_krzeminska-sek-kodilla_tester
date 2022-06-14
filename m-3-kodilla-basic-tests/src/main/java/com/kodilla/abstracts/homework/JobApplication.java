@@ -2,7 +2,6 @@ package com.kodilla.abstracts.homework;
 
 public class JobApplication {
     public static void main(String[] args) {
-
         Nurse nurse = new Nurse();
         Person person1 = new Person("Kamila", 34, nurse);
         person1.getJob().displayJobResponsibilities();
@@ -21,11 +20,5 @@ public class JobApplication {
         Policeman policeman = new Policeman();
         Person person4 = new Person("Andrzej", 34, policeman);
         person4.getJob().displayJobResponsibilities();
-
-
-
-
-
-
     }
 }

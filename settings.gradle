@@ -3,4 +3,5 @@ include 'kodilla_intro'
 include 'm_2_object_orientation'
 include 'm-3-kodilla-basic-tests'
 include 'm-3-kodilla-basic-tests'
+include 'm_4_kodilla_collections'
 

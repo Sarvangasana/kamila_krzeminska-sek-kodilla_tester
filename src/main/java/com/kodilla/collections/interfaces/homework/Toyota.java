@@ -1,5 +1,6 @@
 package com.kodilla.collections.interfaces.homework;
 
+import java.util.Objects;
 import java.util.Random;
 
 public class Toyota implements Car {

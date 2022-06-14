@@ -12,7 +12,7 @@ public class ShapeApplication {
         Shape[] shapes = new Shape[random.nextInt(20) + 1];
         for (int n = 0; n < shapes.length; n++)
             shapes[n] = drawShape();
-        for ( Shape shape : shapes)
+        for (Shape shape : shapes)
             ShapeUtils.displayShapeInfo(shape);
     }
 
