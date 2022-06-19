@@ -40,6 +40,7 @@ class DictionaryTestSuite {
 
     @Test
     public void testFindEnglishWords_withPartOfSpeech(){
+        //given
         Dictionary dictionary = new Dictionary();
         dictionary.addWord("stos", new EnglishWord(PartOfSpeech.NOUN, "stack"));
         dictionary.addWord("brać", new EnglishWord(PartOfSpeech.NOUN, "brotherhood"));

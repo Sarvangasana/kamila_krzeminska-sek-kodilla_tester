@@ -14,5 +14,4 @@ public class Application {
         System.out.println(circle.calculateArea());
         System.out.println(circle.calculateCircuit());
     }
-
 }

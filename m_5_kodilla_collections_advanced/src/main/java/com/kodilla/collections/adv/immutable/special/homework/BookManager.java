@@ -9,7 +9,7 @@ public class BookManager {
     public static Book createBook(String title, String author) {
         Book newBook = new Book(title, author);
          for (Book book : list)
-            if (book.equals(newBook))
+            if (book.equals(newBook)) // można zamiast metody .equals(Object o) użyć metody contains()
                 System.out.println("Such book: " + newBook.getTitle()  + ", " + newBook.getAuthor()
                         + " - (of the same author, with the same title) already exists in the list.");
                 list.add(newBook);
