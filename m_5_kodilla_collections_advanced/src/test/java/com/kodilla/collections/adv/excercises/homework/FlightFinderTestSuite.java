@@ -5,23 +5,30 @@ import org.junit.jupiter.api.Test;
 import java.util.ArrayList;
 import java.util.List;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.*;
 
 class FlightFinderTestSuite {
+    @Test
+    public void testFindFlightsFrom() {
+        //given
+        //when
+        List<Flight> result = FlightFinder.findFlightsFrom("London");
+        //then
+        List<Flight> expectedList = new ArrayList<Flight>();
+        expectedList.add(new Flight("London",  "New York"));
+        expectedList.add(new Flight("London",  "Tel Aviv"));
+        expectedList.add(new Flight("London",  "Moscow"));
+        assertEquals(expectedList, result);
+    }
 
-        @Test
-        public void testFindFlightsFrom() {
-            //given
-            List<Flight> testFlights = new ArrayList<>();
-                    testFlights.add(new Flight("Katowice", "Lizbona"));
-                    testFlights.add(new Flight("Katowice", "Kijów"));
-                    testFlights.add(new Flight("Kijów", "Katowice"));
-            //when
-            List<Flight> result = FlightFinder.findFlightsFrom("Katowice");
-            //then
-            List<Flight> expectedList = new ArrayList<>();
-            expectedList.add(new Flight("Katowice", "Lizbona"));
-            expectedList.add(new Flight("Katowice", "Kijów"));
-            assertEquals(expectedList, result);
-        }
+    @Test
+    public void testFindFlightsTo() {
+        //given
+        //when
+        List<Flight> result = FlightFinder.findFlightsTo("Tel Aviv");
+        //then
+        List<Flight> expectedList = new ArrayList<>();
+        expectedList.add(new Flight("London",  "Tel Aviv"));
+        assertEquals(expectedList, result);
+    }
 }
