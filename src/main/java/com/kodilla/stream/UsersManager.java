@@ -31,7 +31,7 @@ public class UsersManager {
     }
 
     public static List<String> displayUsersGroups() {
-        List<String> usersGroups = UsersRepository.getUsersList()
+        List<String> usersGroups = UsersRepository.getUsersList()// może lepiej skonwertować wynik do Set. bo on nie pozwala na 2 takie same elementy, tzn. że nie wyświetli mi sie dwa razy "Chemists" (?)
                 .stream()
                 .map (user -> user.getGroup())
                 .collect(Collectors.toList());

@@ -12,7 +12,7 @@ public class WarehouseApp {
         } catch (OrderDoesntExistException e) {
             System.out.println("Order number doesn't exist.");
         } finally {
-            System.out.println("Thank You for using or system.");
+            System.out.println("Thank You for using our system.");
         }
     }
 }

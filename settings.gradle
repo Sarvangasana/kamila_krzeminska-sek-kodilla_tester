@@ -5,4 +5,6 @@ include 'm-3-kodilla-basic-tests'
 include 'm-3-kodilla-basic-tests'
 include 'm_4_kodilla_collections'
 include 'm_5_kodilla_collections_advanced'
+include 'm_6_kodilla_stream'
+include 'm_7_kodilla_advaced_tests'
 
