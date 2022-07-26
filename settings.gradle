@@ -10,4 +10,5 @@ include 'm_7_kodilla_advaced_tests'
 include 'm_9_kodilla_spring_basic'
 include 'm_13_kodilla_selenium'
 include 'm_13_kodilla_google_selenium'
+include 'm_14_kodilla-cucumber'
 
