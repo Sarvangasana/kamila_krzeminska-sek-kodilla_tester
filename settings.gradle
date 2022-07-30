@@ -11,4 +11,5 @@ include 'm_9_kodilla_spring_basic'
 include 'm_13_kodilla_selenium'
 include 'm_13_kodilla_google_selenium'
 include 'm_14_kodilla-cucumber'
+include 'm_15_kodilla_code_coverage'
 

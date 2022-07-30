@@ -6,10 +6,10 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class CalculatorTestSuite {
-    private Calculator calculator;
+    private static Calculator calculator;
 
     @BeforeAll
-    public void setUp() {
+    public static void setUp() {
         calculator = new Calculator();
     }
 

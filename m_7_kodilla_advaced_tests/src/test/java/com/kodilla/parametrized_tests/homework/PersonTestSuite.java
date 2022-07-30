@@ -7,11 +7,9 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class PersonTestSuite {
 
-
   @ParameterizedTest
   @MethodSource(value = "com.kodilla.parametrized_tests.homework.DoubleSources#provideDoublesForTestingGetBMI")
     public void shouldDisplayBMI(Person person, String expected) {
       assertEquals(expected, person.getBMI());
   }
-
 }
