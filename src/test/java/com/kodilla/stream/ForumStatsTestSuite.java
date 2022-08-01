@@ -9,6 +9,7 @@ import java.util.List;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class ForumStatsTestSuite {
+
     @Test
     public void testAverageNumberOfPostsInGroupOf_up_to_40_yrsOld() {
         //given
