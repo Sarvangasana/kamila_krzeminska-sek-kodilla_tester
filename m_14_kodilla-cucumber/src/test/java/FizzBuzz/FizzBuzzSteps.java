@@ -8,25 +8,14 @@ public class FizzBuzzSteps implements En {
     private String answer;
 
     public FizzBuzzSteps() {
-        Given("I give {int}", (Integer int1) -> {
-            this.number = 3;
-        });
 
         Given("I give {int}", (Integer int1) -> {
-            this.number = 5;
-        });
-
-        Given("I give {int}", (Integer int1) -> {
-            this.number = 15;
-        });
-
-        Given("I give {int}", (Integer int1) -> {
-            this.number = 14;
+            this.number = int1;
         });
 
         When("I ask if it is divisible by 3 or 5", () -> {
             FizzBuzz fizzBuzz = new FizzBuzz();
-            this.answer = fizzBuzz.checkIfDivisibleBy_3_orBy_5_orBoth(this.number);
+            this.answer = fizzBuzz.checkIfDivisibleBy_3_orBy_5_orBoth(number);
         });
 
         Then("I should be told: {string}", (String string) -> {
