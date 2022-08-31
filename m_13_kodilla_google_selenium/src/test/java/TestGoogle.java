@@ -1,4 +1,3 @@
-import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 import org.openqa.selenium.By;
@@ -18,10 +17,10 @@ public class TestGoogle {
         driver.findElement(By.xpath("//*[@id=\"L2AGLb\"]/div")).click();
     }
 
-    @After
-    public void tearDown() {
-        driver.close();                   // [1]
-    }
+//    @After
+//    public void tearDown() {
+//        driver.close();                   // [1]
+//    }
 
     @Test
     public void testGooglePage() throws InterruptedException {
