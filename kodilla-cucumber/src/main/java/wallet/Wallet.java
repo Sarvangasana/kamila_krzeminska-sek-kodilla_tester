@@ -9,15 +9,15 @@ private int balance = 0;
         this.balance += money;
     }
 
-    public void debit(int money) {
+    public String debit(int money) {
         if (money <= this.balance) {
             this.balance -= money;
-        } else if (money <= 0) {
-            System.out.println("You cannot request for 0 or negative number of money. Please enter positive number");
+//        } else if (money == 0) {
+//            System.out.println("You cannot request for 0 money. Please enter positive number");
         } else {
-            System.out.println("You haven't that much money");
+            return "You haven't that much money";
         }
-
+        return null;
     }
 
     public int getBalance() {
