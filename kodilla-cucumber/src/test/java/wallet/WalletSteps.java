@@ -3,6 +3,7 @@ import io.cucumber.java8.En;
 import org.junit.Assert;
 
 public class WalletSteps implements En {
+
     Wallet wallet = new Wallet();
     CashSlot cashSlot = new CashSlot();
 
