@@ -6,5 +6,6 @@ import org.junit.runner.RunWith;
 @CucumberOptions(
         features = {"src/test/resources/wallet"}
 )
+
 public class TestRunner {
 }
