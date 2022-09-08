@@ -8,10 +8,12 @@ public class WalletSteps implements En {
 
     Cashier cashier = new Cashier(new CashSlot());
 
+    String reply;
+
     public WalletSteps() {
         Given("I have deposited $200 in my wallet", () -> {
             wallet.deposit(200);
-            Assert.assertEquals("Incorrect wallet balance", 200, wallet.getBalance());
+            Assert.assertEquals(200, wallet.getBalance());
         });
 
         When("I request $30", () -> {
@@ -51,6 +53,38 @@ public class WalletSteps implements En {
 
         Then("the balance of my wallet should be still $120", () -> {
             Assert.assertEquals(120, wallet.getBalance());
+        });
+
+        When("I request $120", () -> {
+            wallet.debit(120);
+        });
+
+        Then("the balance of my wallet should be $0", () -> {
+            Assert.assertEquals(0, wallet.getBalance());
+        });
+
+        When("I deposit $100", () -> {
+            wallet.deposit(100);
+        });
+
+        Then("the balance of my wallet should be $100", () -> {
+           Assert.assertEquals(100, wallet.getBalance());
+        });
+
+        When("I request $99", () -> {
+            wallet.debit(99);
+        });
+
+        Then("the balance of my wallet should be $1", () -> {
+            Assert.assertEquals(1, wallet.getBalance());
+        });
+
+        Then("I request $2", () -> {
+            wallet.debit(2);
+        });
+
+        Then("the balance of my wallet should be still $1", () -> {
+            Assert.assertEquals(1, wallet.getBalance());
         });
     }
 }
