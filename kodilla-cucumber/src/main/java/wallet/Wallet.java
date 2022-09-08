@@ -19,7 +19,6 @@ private int balance = 0;
         }
         return null;
     }
-
     public int getBalance() {
         return balance;
     }
